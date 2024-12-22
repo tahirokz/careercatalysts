@@ -11,3 +11,5 @@ gradio
 PyPDF2
 matplotlib
 pandas
+flask
+numpy
