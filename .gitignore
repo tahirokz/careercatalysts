@@ -1,0 +1,20 @@
+# Android/Java specific
+/.idea
+.gradle
+/local.properties
+/.externalNativeBuild
+/build/
+/captures/
+
+# Mac system files
+.DS_Store
+
+# Node modules (if using Node.js)
+node_modules/
+
+# Python bytecode files (if applicable)
+*.pyc
+_pycache_/
+
+# Environment variables (to prevent committing .env files)
+.env
