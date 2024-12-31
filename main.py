@@ -1,6 +1,10 @@
 from fastapi import FastAPI, UploadFile, Form, HTTPException
 from pdf_processor import extract_text_from_pdf
 from resume_logic import compare_resume
+import gradio 
+import gradio_app  # Import gradio.py from the same directory
+import uvicorn
+
 
 app = FastAPI(title="Career Catalyst API")
 
