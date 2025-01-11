@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  careercatalyst:
-    image: careercatalyst
-    build:
-      context: .
-      dockerfile: ./Dockerfile
