@@ -34,9 +34,9 @@ def compare_resume(resume_text, job_description):
             logger.error("Resume text or job description is empty.")
             raise ValueError("Resume text and job description cannot be empty.")
 
-        logger.info("Initializing OpenAI model (GPT-4o-mini)...")
+        logger.info("Initializing OpenAI model (gpt-4o-mini)...")
         # Initialize ChatOpenAI
-        llm = ChatOpenAI(model="GPT-4o-mini", api_key=api_key, request_timeout=30)
+        llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key, request_timeout=30)
 
         # Define the prompt template
         logger.info("Creating prompt template for resume analysis.")

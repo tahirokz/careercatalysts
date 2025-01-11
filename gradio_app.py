@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-API_URL = "http://127.0.0.1:8000/analyze"
+API_URL = "http://127.0.0.1:8000/analyze/"
 
 def analyze(file, job_description):
     logger.info("Starting the analysis process.")
