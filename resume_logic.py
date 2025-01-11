@@ -2,7 +2,11 @@ import logging
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv  # Import to load .env file
 import os
+
+# Load the .env file to access environment variables
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -30,9 +34,9 @@ def compare_resume(resume_text, job_description):
             logger.error("Resume text or job description is empty.")
             raise ValueError("Resume text and job description cannot be empty.")
 
-        logger.info("Initializing OpenAI model (GPT-4o mini)...")
+        logger.info("Initializing OpenAI model (GPT-4o-mini)...")
         # Initialize ChatOpenAI
-        llm = ChatOpenAI(model="GPT-4o mini", api_key=api_key, request_timeout=30)
+        llm = ChatOpenAI(model="GPT-4o-mini", api_key=api_key, request_timeout=30)
 
         # Define the prompt template
         logger.info("Creating prompt template for resume analysis.")
