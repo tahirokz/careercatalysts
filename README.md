@@ -180,5 +180,5 @@ Response:
 
 License
 
-This project is licensed under the UET License.
+This project is licensed under the MIT License.
 Let me know if you need further assistance!
